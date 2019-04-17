@@ -83,3 +83,9 @@ jobs:
               - set +e
           after_script:
               - $CI_MANAGERS/debian.sh CLEANUP
+        - name: Ubuntu Xenial
+          language: bash
+          script:
+              - set -e
+              - sudo $CI_MANAGERS/xenial.sh
+              - set +e
