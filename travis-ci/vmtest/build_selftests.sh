@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euxo pipefail
+
 LLVM_VER=11
 LIBBPF_PATH="${REPO_ROOT}"
 REPO_PATH="travis-ci/vmtest/bpf-next"
